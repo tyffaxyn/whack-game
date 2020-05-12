@@ -1,0 +1,23 @@
+{
+  "name": "play_whack_game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.3.5",
+    "node-sass": "^4.14.0",
+    "normalize.css": "^8.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "next-images": "^1.4.0",
+    "node-fetch": "^2.6.0"
+  }
+}

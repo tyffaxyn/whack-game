@@ -1,0 +1,25 @@
+.box {
+  padding: 12px 24px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 12px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.select {
+  height: 26px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  text-transform: capitalize;
+  background-color: var(--action-color);
+  color: var(--text_color);
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  --container_height: 200px;
+  position: relative;
+  overflow: hidden;
+  height: var(--container_height);
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.grass {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 38%;
+  background: url("./assets/grass.svg") no-repeat center bottom;
+  border-bottom: 5px solid var(--grass_br_color);
+  background-size: contain;
+}
+
+.mole {
+  --animation-time: 1.6s;
+  --character: url('/pikachu.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transform: translateY(100%);
+  background: var(--character) no-repeat center bottom;
+  background-size: 80%;
+
+  &.isOpen {
+    animation: show var(--animation-time) ease-in;
+  }
+
+  &:focus {
+    outline: none;
+    border-top: 2px solid #FDD835;
+  }
+}
+
+@keyframes show {
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

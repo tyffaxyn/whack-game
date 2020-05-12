@@ -1,0 +1,17 @@
+:root {
+  --bg_color: #070707;
+  --action-color: #2B3299;
+  --br_color: #DFE5F0;
+  --grass_br_color: #263238;
+  --text_color: #DFE5F0;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  font-optical-sizing: none;
+  background-color: var(--bg_color);
+  color: var(--text_color);
+}
